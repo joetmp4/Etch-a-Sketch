@@ -74,6 +74,17 @@ h1{
     margin: 20px;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    gap: 32px;
+}
+
+button{
+    height: 3rem;
+    font-size: larger;
+}
+
+p{
+    font-size: xx-large;
 }
 
 .container{
