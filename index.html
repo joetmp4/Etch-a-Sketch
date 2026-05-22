@@ -4,22 +4,25 @@
     <head>
         <title>Etch A Sketch</title>
         <meta charset="UTF-8" lang="en">
-        <script src="script.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Etch-a-Sketch!</h1>
-        <div class="etch">
-            <div class="sketch">
+        <div class="container">
+            <div class="etch">
+                <div class="sketch">
+                </div>
+                <div class="knobs">
+                    <div class="handle"></div>
+                    <div class="handle"></div>
+                </div>
             </div>
-            <div class="knobs">
-                <div class="handle"></div>
-                <div class="handle"></div>
+            <div class="settings">
+                <p class="value"></p>
+                <input type="range" min="1" max="100" value="16" class="slider">
+                <button class="clear">clear</button>
             </div>
         </div>
-        <div class="settings">
-            <p class="value"></p>
-            <input type="range" min="1" max="100" value="16" class="slider">
-        </div>
+        <script src="script.js"></script>
     </body>
 </html>

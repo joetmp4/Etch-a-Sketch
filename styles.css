@@ -27,8 +27,8 @@ h1{
     border-bottom: 15px #bc3030 solid;
 
     border-radius: 30px;
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,8 +36,8 @@ h1{
 }
 
 .sketch{
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     background-color: white;
     margin: 3rem 0 0 0;
     display: flex;
@@ -46,7 +46,7 @@ h1{
 
 .knobs{
     padding: 2rem;
-    width: 50rem;
+    width: 45rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,4 +57,14 @@ h1{
     width: 8rem;
     aspect-ratio: 1;
     border-radius: 100%;
+    border: 15px solid rgba(208, 208, 208, 0.305);
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
 }
