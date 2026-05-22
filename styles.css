@@ -40,6 +40,8 @@ h1{
     height: 40rem;
     background-color: white;
     margin: 3rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .knobs{
