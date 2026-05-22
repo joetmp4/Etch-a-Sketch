@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: Pixelify sans;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff2df;
+}
+
+h1{
+    font-size: 70px;
+    color: white;
+    -webkit-text-stroke: 3px rgb(62, 61, 61);
+}
+
+.etch{
+    background-color: #ca2a2a;
+    border-right: 15px #db3737 solid;
+    border-top: 15px #db3737 solid;
+    border-left: 15px #bc3030 solid;
+    border-bottom: 15px #bc3030 solid;
+
+    border-radius: 30px;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sketch{
+    width: 40rem;
+    height: 40rem;
+    background-color: white;
+    margin: 3rem 0 0 0;
+}
+
+.knobs{
+    padding: 2rem;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.handle{
+    background-color: white;
+    width: 8rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
