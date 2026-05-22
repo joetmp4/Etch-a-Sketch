@@ -18,12 +18,17 @@ const createGrid = () => {
         cube.style.border = "1px solid rgb(62, 61, 61, 0.5)";
         cube.style.width = `${100/num}%`;
         cube.style.height = `${100/num}%`;
-        
+
         let temp = 0;
         
         cube.addEventListener("mouseenter", () => {
             if(mode == "rainbow") cube.style.backgroundColor = randomColor();
-            else if(mode == "fade") {temp += fade; cube.style.backgroundColor = `rgb(0,0,0, ${temp + fade})`;}
+            else if(mode == "fade") {
+                if(cube.style.backgroundColor != "black"){
+                    temp = Math.min(temp + fade, 1);
+                    cube.style.backgroundColor = `rgba(0,0,0, ${temp})`;
+                }
+            }
             else cube.style.backgroundColor = color;
         });
 
@@ -50,7 +55,7 @@ buttons.forEach((button) => {
         if(custom == "clear") createGrid(); //clear
         else if(custom == "black") {color = "black"; mode = "black";} //set color to black
         else if(custom == "rainbow") mode = "rainbow"; //set mode to rainbow
-        else if(custom == "fade") {color = `rgb(0,0,0, ${fade})`; mode = "fade";}
+        else if(custom == "fade") mode = "fade";
     })
 });
 
